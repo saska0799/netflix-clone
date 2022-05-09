@@ -1,13 +1,213 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.navbar {
+  position: absolute;
+  z-index: 9999;
+  width: 100%;
+}
+
+.header-container {
+  position: relative;
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 0,
+      rgba(0, 0, 0, 0) 200%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url(https://assets.nflxext.com/ffe/siteui/vlv3/f841d4c7-10e1-40af-bcae-07a3f8dc141a/9b17cde2-1618-450a-8dcd-52a75d10f259/RS-en-20220502-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+  height: 706px;
+  background-position: center;
+}
+
+.btn-navbar {
+  background: #e50914;
+  border-radius: 3px;
+}
+
+.heading-navbar {
+  color: #e50914;
+}
+
+.heading-navbar:hover {
+  color: #e50914;
+}
+
+.text-container {
+  width: 790px;
+}
+
+.home-card {
+  background: #000;
+  border-top: 5px solid grey;
+  padding: 70px 45px;
+}
+
+.get-started-btn {
+  width: 300px;
+  border: 0px;
+  background-color: red;
+}
+
+.card-img {
+  z-index: 2;
+}
+
+.kids-img {
+  width: 500px;
+}
+
+.card-video {
+}
+
+.card-video-2 {
+  position: relative;
+  top: 50px;
+  left: -10px;
+  width: 400px;
+}
+
+.download-img {
+  width: 500px;
+}
+
+.download-img-2 {
+  width: 51px;
+}
+
+.download-container {
+  width: 330px;
+  border-radius: 10px;
+  position: absolute;
+  top: 70%;
+  left: 15%;
+  background: #000;
+}
+
+.accordion {
+  max-width: 800px;
+  width: 100%;
+}
+
+.accordion * {
+  background-color: #303030;
+  color: #fff;
+  font-size: 1.7rem;
+  border-radius: 0;
+}
+
+.accordion > * {
+  margin: 0.5rem 0;
+}
+
+.accordion-button {
+  border-radius: 0;
+}
+
+.accordion-button:focus {
+  background-color: #303030;
+  color: #fff;
+  border-bottom: 1px solid #000;
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  color: inherit;
+  background-color: inherit;
+  box-shadow: none;
+}
+
+.accordion-button::after {
+  background-image: url(https://pngimg.com/uploads/plus/plus_PNG100.png);
+  transition: none;
+  background-size: 2rem;
+  width: 3rem;
+  height: 2rem;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url(https://pngimg.com/uploads/plus/plus_PNG100.png);
+  transform: translateY(-20%) rotate(-45deg);
+}
+
+.footer-text {
+  font-size: 16px;
+}
+
+li {
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 13px;
+  padding-bottom: 10px;
+  width: 150px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.col {
+  padding-left: 0;
+  margin-right: 50px;
+}
+
+@media (max-width: 576px) {
+  .card-video {
+    width: 300px;
+  }
+
+  .card-video-2 {
+    width: 230px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .card-video {
+    width: 400px;
+  }
+
+  .card-video-2 {
+    width: 270px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .card-video {
+    width: 500px;
+  }
+
+  .card-video-2 {
+    width: 380px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .card-video {
+    width: 350px;
+  }
+
+  .card-video-2 {
+    width: 250px;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1400px) {
+  .card-video {
+    width: 400px;
+  }
+
+  .card-video-2 {
+    width: 330px;
+  }
 }
