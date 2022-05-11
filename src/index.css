@@ -58,6 +58,7 @@ code {
   width: 300px;
   border: 0px;
   background-color: red;
+  font-size: 25px;
 }
 
 .card-img {
@@ -66,9 +67,6 @@ code {
 
 .kids-img {
   width: 500px;
-}
-
-.card-video {
 }
 
 .card-video-2 {
@@ -162,7 +160,42 @@ ul {
   margin-right: 50px;
 }
 
+.form-container {
+  height: 100vh;
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 0,
+      rgba(0, 0, 0, 0) 200%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url(https://assets.nflxext.com/ffe/siteui/vlv3/ebff1e0f-5704-423f-b4c6-94914dabe25b/34417faf-b7f2-44d1-9e61-41d754afdde5/RS-en-20220509-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+}
+
+form {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 380px;
+}
+
+.form-input {
+  width: 100%;
+  background-color: grey;
+  color: white;
+  border-radius: 8px;
+  border: none;
+}
+
+.form-input:focus {
+  outline: none;
+}
+
+.form-input::placeholder {
+  color: white;
+}
+
 @media (max-width: 576px) {
+  .get-started-btn {
+    font-size: 16px;
+  }
   .container-subscribe {
     width: 80%;
   }
