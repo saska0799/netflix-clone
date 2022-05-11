@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import HomeCards from "../components/HomeCards";
+import HomeCardsFlipped from "../components/HomeCardsFlipped";
 import { RiDownloadLine } from "react-icons/ri";
 import Subscribe from "../components/Subscribe";
 const Home = () => {
@@ -42,11 +43,11 @@ const Home = () => {
           </div>
         </div>
       </HomeCards>
-      <HomeCards>
-        <div className="position-relative">
+      <HomeCardsFlipped>
+        <div className="container position-relative d-flex justify-content-center my-sm-0">
           <img
             alt=""
-            className="download-img"
+            className="download-img w-100"
             src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"
           />
           <div className="download-container py-2 container d-flex justify-content-between align-items-center border">
@@ -77,7 +78,7 @@ const Home = () => {
             Save your favorites easily and always have something to watch.
           </p>
         </div>
-      </HomeCards>
+      </HomeCardsFlipped>
       <HomeCards>
         <div className="container">
           <h1 className="display-3 fw-bold pb-3 text-light">
@@ -106,10 +107,10 @@ const Home = () => {
           </div>
         </div>
       </HomeCards>
-      <HomeCards>
+      <HomeCardsFlipped>
         <img
           alt=""
-          className="kids-img"
+          className="kids-img w-100"
           src="https://occ-0-1490-1489.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABRUVwm0Th8tURZtHa8QAQoQEK0s2kalECfHtYtFGZ-uckUjl7aHUOilKZVP5joQrLec41raWv_MP0jNW5JYQhcBEfVUlcQqRHcmR.png?r=fcd"
           data-uia="our-story-card-img"
         />
@@ -123,10 +124,10 @@ const Home = () => {
             made just for them—free with your membership.
           </p>
         </div>
-      </HomeCards>
+      </HomeCardsFlipped>
       <HomeCards>
-        <div className="d-flex flex-column justify-content-center align-items-center">
-          <h1 className="display-3 fw-bold pb-5 text-light">
+        <div className=" d-flex flex-column justify-content-center align-items-center">
+          <h1 className="display-3 fw-bold pb-5 text-light text-center">
             Frequently Asked Questions
           </h1>
           <div className="accordion pb-5" id="accordionFlushExample">
@@ -307,11 +308,11 @@ const Home = () => {
         </div>
       </HomeCards>
       <HomeCards>
-        <div className="d-flex flex-column text-start text-light text-muted">
+        <div className="d-sm-flex flex-column text-start text-light text-muted">
           <h3 className="footer-text">Questions? Contact us.</h3>
           <div class="container">
             <div class="row py-3">
-              <div class="col">
+              <div class="col-6 col-sm-3">
                 <ul>
                   <li>FAQ</li>
                   <li>Investor Relations</li>
@@ -319,7 +320,7 @@ const Home = () => {
                   <li>Speed Test</li>
                 </ul>
               </div>
-              <div class="col">
+              <div class="col-6 col-sm-3">
                 <ul>
                   <li>Help Center</li>
                   <li>Jobs</li>
@@ -327,7 +328,7 @@ const Home = () => {
                   <li>Legal Notices</li>
                 </ul>
               </div>
-              <div class="col">
+              <div class="col-6 col-sm-3">
                 <ul>
                   <li>Account</li>
                   <li>Ways to Watch</li>
@@ -335,7 +336,7 @@ const Home = () => {
                   <li>Only on Netflix</li>
                 </ul>
               </div>
-              <div class="col">
+              <div class="col-6 col-sm-3">
                 <ul>
                   <li>Media Center</li>
                   <li>Terms of Use</li>
